@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <math.h>
 #define errorTolerance 0.001

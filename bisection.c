@@ -18,9 +18,11 @@ int main()
     
     do
     {
-        
+        // Input initial values of a and b
         printf("Enter the initial value of a and b:");
         scanf("%lf%lf",&a,&b);
+
+        // Check if root exists within the interval
         product = func(a)*func(b);
         if(product==0){
             printf("the root is %lf",(func(a)==0)?a:b);
