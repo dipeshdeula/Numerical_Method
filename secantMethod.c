@@ -23,25 +23,7 @@ int main()
 {
     int iteration = 0;
     double product, x, a, b, error, prev;
-    // do
-    // {
-    //     printf("Enter the initial guess a and b:");
-    //     scanf("%f%f", &a, &b);
-    //     product = f(a) * f(b);
-    //     if(product<0)
-    //     {
-    //         break;
-    //     }
-    //     else if (product > 0)
-    //     {
-    //         printf("\nRe enter the initial values:");
-    //     }
-    //     else if (product == 0)
-    //     {
-    //         printf("the root is %lf", (f(a) == 0) ? a : b);
-    //         return 0;
-    //     }
-    // } while (1);
+    
     printf("Enter the initial guess x1 and x2:");
     scanf("%lf%lf",&a,&b);
 
@@ -53,10 +35,7 @@ int main()
     do
     {
         iteration++;
-        // if (iteration > 1)
-        // {
-        //     prev = x;
-        // }
+       
         x = func(a, b);
         printf("%d\t%.4lf\t\t%.4lf\t\t%.4lf\t\t%.4lf\t\t%.4lf\t\t%.4lf\n",iteration,a,b,f(a),f(b),x,f(x));
         a = b;
